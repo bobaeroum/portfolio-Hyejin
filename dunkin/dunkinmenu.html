@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 파비콘 -->
+<link rel="apple-touch-icon" sizes="57x57" href="ddfavicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/ddfavicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/ddfavicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/ddfavicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/ddfavicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/ddfavicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/ddfavicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/ddfavicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/ddfavicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/ddfavicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/ddfavicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/ddfavicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/ddfavicon/favicon-16x16.png">
+<link rel="manifest" href="img/ddfavicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/ddfavicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="css/dunkinstyle.css">
+    <link rel="stylesheet" href="css/dunkinresponsive.css">
+    <script src="https://kit.fontawesome.com/a95e8a4dc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>던킨</title>
+
+<style>
+
+
+@media screen and (max-width: 1199px){
+    .box-container .itemBox{
+    width: 29%;
+}
+}
+
+@media screen and (max-width: 992px){
+    .box-container .itemBox{
+    width: 100%;
+}
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="dunkin.html">
+            <img src="img/logo.png" class="logo">
+        </a>
+        <div class="toggleMenu" onclick="menuToggle()"></div>
+        <ul class="nav">
+            <li><a href="dunkinlogin.html">로그인</a></li>
+            <li><a href="dunkinmenu.html">메뉴</a></li>
+            <li><a href="dunkinbrand.html">브랜드</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </header>
+
+<section class="menu" id="menu">
+    <div class="menu-banner">
+        <img src="img/banner6.jpg" alt="">
+        <h1>
+            MENU<span>'</span>
+        </h1>
+    </div>
+    <div class="title">
+        <h1>
+            DUNKIN'
+        </h1>
+        <h2>
+            던킨 도너츠 메뉴
+        </h2>
+    </div>
+    <div class="box-container">
+        <div class="itemBox">
+            <span class="comment">추천</span>
+            <img src="img/brand1.jpg" alt="">
+            <h3>트윙클도넛</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+
+        <div class="itemBox">
+            <span class="comment">추천</span>
+            <img src="img/brand2.jpg" alt="">
+            <h3>러블리도넛</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+
+        <div class="itemBox">
+            <span class="comment">추천</span>
+            <img src="img/brand3.jpg" alt="">
+            <h3>러블리핑크</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+
+        <div class="itemBox">
+            <!-- <span class="comment">추천</span> -->
+            <img src="img/menu2.jpg" alt="">
+            <h3>초코봉봉링</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+
+        <div class="itemBox">
+            <!-- <span class="comment">추천</span> -->
+            <img src="img/brand4.jpg" alt="">
+            <h3>커피&도넛</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+
+        <div class="itemBox">
+            <!-- <span class="comment">추천</span> -->
+            <img src="img/menu3.jpg" alt="">
+            <h3>발렌타인세트</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="" class="btn">자세히보기</a>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    function menuToggle(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    toggleMenu.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+
+
+</script>
+</body>
+</html>

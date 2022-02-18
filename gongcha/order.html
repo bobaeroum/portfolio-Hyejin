@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="image/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 웹 아이콘 -->
+    <script src="https://kit.fontawesome.com/a95e8a4dc0.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link href="css/order.css" rel="stylesheet">
+    <!-- CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 슬릭 -->
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <script src="js/slick/slick.min.js"></script>
+    <!-- 트리거 -->
+	<link href="css/trigger.css" rel="stylesheet">
+
+    <title>공차</title>
+</head>
+<body>
+<div class="container">
+    <header> <!-- width 1200px -->
+        <div class="menu">
+            <!-- 메인메뉴 -->
+            <nav>
+                <a href="index.html"><img src="img/logo.png"></a><!-- left -->
+                <ul class="menu_list"> <!-- right -->
+                    <li><a href="story.html">브랜드</a></li>
+                    <li><a href="order.html">메뉴</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">멤버쉽</a></li>
+                    <li><a href="#">스토어</a></li>
+                </ul>
+            </nav>
+                <!-- 서브메뉴 -->
+                <div class="sub_box"> <!-- 100% -->
+                    <div class="sub_menu"> <!-- 100% > 1200px -->
+                        <ul>
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">공차의 약속</a></li>
+                            <li><a href="#">브랜드 아이덴티티</a></li>
+                            <li><a href="#">세계속의 공차</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li><a href="#">주문방법</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">MD상품</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">가맹점 문의</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li><a href="#">공차 멤버쉽</a></li>
+                            <li><a href="#">공차 카드 & e-Gift</a></li>
+                            <li><a href="#">브랜드 아이덴티티</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li><a href="#">통신사 제휴</a></li>
+                            <li><a href="#">결제서비스</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">공차소식</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        
+                 <!-- sub-box 끝 -->
+        </header>
+        <!-- header 끝 -->
+
+<!-- 상단배너 -->
+<div id="order_banner">
+    <div class="order_txt">
+        <h1>공차가 처음이신가요?</h1>
+        <p>
+            공차는 오리지널 티(Tea)와 에이드, 스무디 등을 베이스로<br>
+            5가지 당도와 얼음량, 토핑까지 조절할 수 있어 개별 맞춤 주문이 가능한 커스터마이징 시스템입니다.<br>
+            <span>600여 가지의 다양한 조합으로 음료를 즐길 수 있습니다.</span>
+        </p>
+    </div>
+
+    <div id="order_top-banner"><img src="img/order_banner.png"></div>
+</div>
+
+<div id="step-1" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+    <div class="step-1-txt">
+        <span>STEP 1.</span>
+        <h1>TEA MENU</h1>
+        <br>
+        <p>취향에 맞게 공차의 음료를 고르세요.</p>
+    </div>
+    <div class="step-1-img">
+        <div>
+            <img src="img/order_cup1.png">
+            <p>
+                오리지널 티<br>
+                <span>(Hot & Iced)</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/order_cup2.png">
+            <p>
+                밀크폼&치즈폼<br>
+                <span>(Hot & Iced)</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/order_cup3.png">
+            <p>
+                밀크티<br>
+                <span>(Hot & Iced)</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/order_cup4.png">
+            <p>
+                그린티 에이드<br>
+                <span>(Iced only)</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- step-2 -->
+<div id="step-2">
+    <div class="step-2-txt">
+        <span>STEP 2.</span>
+        <h1>TOPPINGS</h1>
+        <br>
+        <p>
+            6가지 토핑중<br>
+            원하는 토핑을 선택하세요.<br>
+            (최대 3가지 선택 가능)
+        </p>
+    </div>
+    <div class="step-2-container">
+        <ul class="step-2-item">
+            <li>
+            <img src="img/order_con1.gif">
+            <h1>밀크폼</h1>
+            <p>Milk Foam</p>
+            <span>
+                깊고 부드러운 맛을 내는<br>
+                달콤 짭쪼름한 토핑
+            </span>
+        </li>
+        <li>
+            <img src="img/order_con2.gif">
+            <h1>펄(타피오카)</h1>
+            <p>Pearl</p>
+            <span>
+                카사바 뿌리의 녹말로 만든<br>
+                쫀득쫀득한 식감의 토핑
+            </span>
+        </li>
+        <li>
+            <img src="img/order_con3.gif">
+            <h1>코코넛</h1>
+            <p>Coconut</p>
+            <span>
+                달콤한 코코넛으로 만들어진<br>
+                쫄깃쫄깃한 젤리
+            </span>
+        </li>
+    </ul>
+
+        <ul class="step-2-item">
+        <li>
+            <img src="img/order_con4.gif">
+            <h1>알로에</h1>
+            <p>Aloe</p>
+            <span>
+                신선하고<br>
+                사각사각한 토핑
+            </span>
+        </li>
+        <li>
+            <img src="img/order_con5.gif">
+            <h1>화이트펄</h1>
+            <p>White Pearl</p>
+            <span>
+                해초추출물로 만들어<br>
+                꼬들꼬들한 토핑
+            </span>
+        </li>
+        <li>
+            <img src="img/order_con6.gif">
+            <h1>치즈폼</h1>
+            <p>Cheese Foam</p>
+            <span>
+                진한 치즈 풍미를 더해<br>
+                감칠맛이 나는 달콤 짭조름한 토핑
+            </span>
+        </li>
+    </ul>
+    </div>
+</div><!-- step-2 -->
+    
+<!-- step-3 -->
+<div id="step-3" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+    <div class="step-3-txt">
+        <span>STEP 3.</span>
+        <h1>SWEET & <br>
+            ICE GRADE</h1>
+        <br>
+        <p>당도와 얼음량을 원하시는 만큼 조절하세요.</p>
+    </div>
+
+    <div class="step-3-con">
+        <div><img src="img/order_graph1.jpg"></div>
+        <div><img src="img/order_graph2.jpg"></div>
+    </div>
+</div>
+
+
+
+</div>
+<!-- 컨테이너 -->
+
+
+
+
+
+
+
+
+
+
+<footer> <!-- 100% > 1200px -->
+    <div class="ft">
+        <div class="ft_1">
+            <img src="img/ft_logo.png">
+        </div>
+                
+        <div class="sns">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+                    
+            <span>
+                고객만족센터 02-773-7758<br>
+                (운영시간 오전9시~오후6시 / 주말 및 공휴일 휴무)
+            </span>
+        </div>
+            
+        <div class="addres">
+            <span>서울 종로구 종로 47(공평동. 7층)</span>
+            <span>(주)공차코리아 대표이사 김의열</span>
+            <span>사업자등록번호 214-88-84534</span>
+            <span>통신판매번호 2020-서울종로-0966</span>
+        </div>
+    </div>
+            
+    <div class="ft2">
+        <div class="ft_3">
+            <p>회사소개</p>
+            <p>제휴/제안</p>
+            <p>고객센터</p>
+            <p>이용약관</p>
+            <p>공지사항</p>
+            <br>
+            <p class="p6">(C)GONGCHA KOREA CO.,LTD<br>
+                ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+
+<script src="js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+	// this refers to the html element with the data-scroll-showCallback tag
+	var span = this.querySelector('span');
+	var current = parseInt(span.textContent);
+
+	span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+	  addHeight: true
+  });
+});
+</script>
+
+<!-- 메뉴 -->
+<script>
+    $(function(){
+        $('.menu_list li, .sub_box').mouseover(function(){
+            $('.sub_box').stop().slideDown(300);
+        });
+
+        $('.main_menu li, .sub_box').mouseout(function(){
+            $('.sub_box').stop().slideUp(300);
+        });
+    });
+</script>
+    
+</body>
+</html>

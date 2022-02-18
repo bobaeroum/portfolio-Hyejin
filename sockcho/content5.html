@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- 파비콘 -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- css -->
+<link rel="stylesheet" href="css/style-content5.css">
+
+<title>나를 설레게 하는 도시, 속초</title>
+
+<style>
+
+section i{
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff,
+  0 0 20px #fff
+  0 0 30px #fff
+  0 0 40px #fff
+  0 0 50px #fff
+  0 0 60px #fff
+  0 0 70px #fff;
+  animation: animate linear infinite;
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+#shootingstar{margin: 0; padding: 0;
+        box-sizing: border-box;}
+
+#shootingstar span{position: absolute;
+            top: 20%; left: 70%;
+            width: 3px; height: 3px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1),
+            0 0 0 3px rgba(255, 255, 255, 0.2),
+            0 0 0 4px rgba(255, 255, 255, 0.3),
+            0 0 0 5px rgba(255, 255, 255, 0.4),
+            0 0 0 6px rgba(255, 255, 255, 0.5),
+            0 0 0 7px rgba(255, 255, 255, 0.6),
+            0 0 0 8px rgba(255, 255, 255, 0.8),
+            0 0 0 9px rgba(255, 255, 255, 0.9),
+            0 0 0 10px rgba(255, 255, 255, 1),;
+            animation: animate 3s linear infinite;
+            z-index: 1;
+        }
+#shootingstar span::before{
+    content: '';
+    position: absolute;
+    top: 30%; 
+    transform: translateY(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-30000%);
+        opacity: 0;
+    }
+
+}
+
+#shootingstar :nth-child(1){
+    top: 0; right: 100px;
+    animation-delay: -2s;
+    animation-duration: 2s;
+}
+#shootingstar :nth-child(2){
+    top: 300px; right: 800px;
+    animation-delay: -5s;
+    animation-duration: 3s;
+}
+#shootingstar :nth-child(3){
+    top: 100px; right: 300px;
+    animation-delay: -8s;
+    animation-duration: 1s;
+}
+
+#shootingstar :nth-child(4){
+    top: 800px; right: 0px;
+    animation-delay: -5s;
+    animation-duration: 5s;}
+
+#shootingstar:nth-child(5){
+    top: 500px; right: 0px;
+    animation-delay: -2s;
+    animation-duration: 2s;}
+</style>
+
+</head>
+
+<body>
+<!-- 헤더 fluid -->
+<div class="container-fluid">
+<!-- 메뉴 -->
+<header class="fixed-top">
+  <nav class="navbar navbar-light navbar-expand-lg">
+      <!-- 로고 -->
+      <a href="index.html">
+          <img src="img/logo.png" alt="home" class="img-fluid" id="logo">
+      </a>
+      <!-- 3단버튼 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 메뉴 -->
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a href="content5.html" class="nav-link">속초 길자리</a>
+          </li>
+          <li class="nav-item">
+              <a href="content4.html" class="nav-link">이달의 속초</a>
+          </li>
+          <li class="nav-item">
+              <a href="content2.html" class="nav-link">테마별 속초</a>
+          </li>
+          <li class="nav-item">
+              <a href="content3.html" class="nav-link">속초 여행 코스</a>
+          </li>
+          </ul>
+        </div>
+  </nav><!-- nav 끝 -->
+</header><!-- 메뉴 끝 -->
+<section class="shootingstar" id="shootingstar">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+</section>
+    <section class="content4" id="section">
+        <h1 class="text-center">
+            속초 길자리를 찾아서
+        </h1>
+        <!-- 지도 -->
+        <div class="map w-50">
+            <img src="img/map.png" alt="" class="img-fluid d-block mx-auto">
+        </div>
+
+        <!-- 하단 아이템 -->
+    <div class="container">
+        <div class="item-box">
+            <div class="row justify-content-center inner-1">
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella1.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>1길 영랑호 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella2.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>2길 영랑해 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella3.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>3길 수복탑 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella4.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>4길 아바이 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella5.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>5길 속초해 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella6.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>6길 청대산 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella7.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>7길 청초호 길자리</span>
+                </div>
+            
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella8.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>8길 청초천 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella9.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>9길 설악산 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella10.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>10길 대포항 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella11.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>11길 바다향 길자리</span>
+                </div>
+
+                <div class="col-lg-3 item-inner">
+                    <img src="img/stella12.png" alt="#" class="img-fluid rounded-circle p-2">
+                    <span>12길 해파랑 길자리</span>
+                </div>
+            </div><!-- row 끝 -->
+        </div><!-- item-box 끝 -->
+        <!-- 아코디언 -->
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header"> <!--소제목-->
+            <a class="card-link" data-toggle="collapse" href="#collapse1">
+              1길 영랑호길자리
+            </a>
+          </div>
+          <!--내용-->
+          <div id="collapse1" class="collapse show" data-parent="#accordion"> 
+            <div class="card-body text-center">
+              <img src="img/stella1.png" alt="" class="img-fluid d-block mx-auto">
+              <span class="d-block m-2 text-white">
+                  <strong>영랑호 길자리</strong><br>
+                  영랑호를 품에 안고 떠나는 길자리
+                </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse2">
+                2길 영랑해길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse2" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella2.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>영랑해 길자리</strong><br>
+                    바다의 청량함과<br>
+                    운치가 살아있는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse3">
+                3길 수복탑길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse3" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella3.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>수복탑 길자리</strong><br>
+                    과거의 옛스러운 정취를<br>
+                    느낄 수 있는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse4">
+                4길 아바이길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse4" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella4.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>아바이 길자리</strong><br>
+                    실향민의 애환이 담긴 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse5">
+                5길 속초해길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse5" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella5.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-dark">
+                    <strong>속초해 길자리</strong><br>
+                    끊임엇이 펼쳐진 동해바다가<br>함께하는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse6">
+                6길 청대산 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse6" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella6.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-dark">
+                    <strong>청대산 길자리</strong><br>
+                    숲 향기에 취하고<br>바다에 반하는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse7">
+                7길 청초호 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse7" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella7.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>청초호 길자리</strong><br>
+                    속초 발전의 역사가 남아있는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse8">
+                8길 청초천 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse8" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella8.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>청초천 길자리</strong><br>
+                    속초의 역사와 문화를<br>
+                    체험할 수 있는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse9">
+                9길 설악산 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse9" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella9.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>설악산 길자리</strong><br>
+                    도심을 벗어나<br>
+                    여유를 찾을 수 있는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse10">
+                10길 대포항 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse10" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella10.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>대포항 길자리</strong><br>
+                    저항의 역사,<br>
+                    함성이 살아 숨 쉬는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse11">
+                11길 바다향 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse11" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella11.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>바다향 길자리</strong><br>
+                    시원한 바다향기와<br>
+                    솔내음 가득한 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"> <!--소제목-->
+              <a class="card-link" data-toggle="collapse" href="#collapse12">
+                12길 해파랑 길자리
+              </a>
+            </div>
+            <!--내용-->
+            <div id="collapse12" class="collapse" data-parent="#accordion"> 
+              <div class="card-body text-center">
+                <img src="img/stella12.png" alt="" class="img-fluid d-block mx-auto">
+                <span class="d-block m-2 text-white">
+                    <strong>해파랑 길자리</strong><br>
+                    떠오르는 해와<br>
+                    푸른 바다가 함께하는 길자리
+                  </span>
+              </div>
+            </div>
+          </div>
+      </div>      <!--아코디언 끝--> 
+    </div><!-- container 끝 -->
+ 
+    </section><!-- content4 끝 -->
+</div> <!-- container-fluid 끝 -->
+
+
+
+<!-- 기본 js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+  // 별을 만들면서 난수 생성하는 걸 배워나가고 있음
+  // css애니메이션과 약간 엉키는 것 같은데 원래 버전보다 예뻐서 쓰기로 함
+  function stars(){
+    const count = 200;
+    // document.querySelector를 쓴다고 하여 써보았으나 오류생성. id를 넣어서 다시 작성함.
+    const section = document.getElementById('section');
+    var i = 0;
+
+    while (i < count){ 
+      const star = document.createElement('i')
+      // 윈도우창 안에서 난수 생성
+      const x = Math.floor(Math.random() * window.innerWidth)
+      const y = Math.floor(Math.random() * window.innerHeight)
+      
+      // 크기와 모양 난수 생성
+      const size = Math.random() * 2;
+      star.style.left = x+'px';
+      star.style.top = y+'px';
+      star.style.width = 1+size+'px';
+      star.style.height = 1+size+'px';
+      // 지속시간과 지연시간 난수 생성
+      const duration = Math.random() *2;
+      star.style.animationDuration = 2+duration+'s';
+      star.style.animationDelay = duration+'s';
+      // i라는 요소를 노드에 추가 append를 사용하는 것이 좋다고 함. 아직 정확하게 배우지 못함. 좀더 공부할것.
+      section.appendChild(star);
+      i++
+    }
+  }
+  stars();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한혜진 포트폴리오 기술 소개</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-family: 'Noto Sans KR';
+        background: #f9f9f1;
+    }
+
+    p{
+        color: #555;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    strong{
+        font-weight: 600;
+        font-size: 17px;
+        color: #000;
+    }
+
+    .container{
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .mainBanner{
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .title{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .title h1,
+    .cardContent h1{
+        font-weight: 400;
+        font-size: 30px;
+        color: #00012e;
+    }
+
+    .title p{
+        margin-top: 3rem;
+        line-height: 1.8rem;
+    }
+
+    .content1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        line-height: 1.8rem;
+    }
+
+    .content1 img{
+        width: 30%;
+        /* border: 0.1px solid #777; */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .content1 p{
+        width: 40%;
+        padding-left: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+    .content1 p span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .content1-1{
+        text-align: center;
+        margin-top: 3rem;
+        line-height: 1.8rem;
+    }
+
+    .content1-1 p{
+        margin-top: 3rem;
+    }
+
+    .menuContent{
+        margin-top: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .menuContent img{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .content2,
+    .content3,
+    .content4, 
+    .content5, 
+    .content6, 
+    .content7{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    /* .content4Txt{} */
+    .content2Img,
+    .content3Img,
+    .content4Img, 
+    .content5Img, 
+    .content6Img, 
+    .content7Img{
+        width: 50%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .content2Img img,
+    .content3Img img,
+    .content4Img img, 
+    .content5Img img, 
+    .content6Img img, 
+    .content7Img img{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .content2 p{
+        margin-top: 3rem;
+    }
+
+    .cardContent{
+        text-align: center;
+    }
+
+    .line{
+        height: 1px;
+        width: 7rem;
+        margin: auto;
+        background: #555;
+    }
+
+
+    /* button */
+    .btn{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.btn a{
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 1.7rem;
+    background: #00012e;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.btn a:hover{
+    background: #00C6C4;
+    color: #00012e;
+}
+
+.btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+    transform: skewY(-45deg);
+}
+
+.btn a:hover::before{
+    left: 100%;
+}
+
+.design-btn{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    padding: 0.5rem 1.7rem;
+    color: #fff;
+    background-color: #00C6C4;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .5s;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.design-btn:hover{
+    color: #00012e;
+    background: #FBF175;
+}
+.design-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+    transform: skewY(-45deg);
+}
+
+.design-btn:hover::before{
+    left: 100%;
+}
+
+.buttonTxt{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+.buttonTxt div{
+    justify-content: center;
+    margin: auto;
+}
+
+.btn2{
+    width: 13%;
+}
+
+.buttonTxt p{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 991px) {
+    .container{
+        padding: 1rem;
+    }
+    .content1{
+        flex-direction: column;
+    }
+
+    .content1 img{
+        width: 100%;
+    }
+    .content1 p{
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .btn2{
+        width: 50%;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="mainBanner">
+            <img src="img/mainBanner.jpg" alt="">
+        </div>
+
+        <div class="title">
+            <h1>
+                신입 웹 퍼블리셔 <span>한혜진</span><br>
+                포트폴리오 전개도입니다.
+            </h1>
+
+            <p>
+                전체적으로 반응형 기술을 사용할 수 있다는 점을 어필할 수 있는<br>
+                레이아웃으로 제작하였습니다. 사용된 기술은,<br>
+                <b>html, css, GSAP, Jquery, JAVASCRIPT</b> 입니다.<br>
+                <b>반응형</b>은 <b>css의 flex기술</b>과 <b>미디어 쿼리</b>로 구현하였습니다.<br>
+            </p>
+        </div>
+
+        <div class="content1">
+            <img src="img/mo-main.jpg" alt="mo-main">
+            <p>
+                <span>pc화면에서는, </span><br>
+                좌측에서 yellow컬러가
+                <strong>width전체로 미끄러지듯 등장</strong>하면서
+                우측 벽에 부딪히며
+                우측의 navy컬러가 채워집니다.<br>
+                모든 폰트는 상단의 메뉴바가 등장하면서
+                비슷한 타이밍으로 등장합니다.
+                좌측 하단의 텍스트 애니메이션은,
+                우측의 글자가 등장하면서 함께 등장합니다.<br>
+                <br>
+                center의 프로필 사진은,
+                텍스트와 함께 <strong>위에서 아래로 등장</strong>하는 듯한 모습으로 
+                순서를 짜서 제작해보았습니다. <br>
+                <br>
+                좌측 하단의 텍스트는
+                span태그로 만들었으며,
+                하트 아이콘 또한 span태그로
+                before 기능을 통해 구현하였습니다.<br>
+                <br>
+                <span>모바일 화면에서는, </span><br>
+                사용하였던 <strong>js 코드를 그대로 이용</strong>하여, <strong>flex-direction</strong> 기능과<br>
+                <strong>width값을 100%로 변경하고, height값을 넣어줌으로써</strong><br>
+                깔끔하게 한 블럭 한 블럭으로 보일 수 있도록 교체하였습니다.<br>
+            </p>
+        </div>
+
+        <div class="content1-1">
+            <div class="menuContent">
+                <img src="img/menuBanner.png" alt="menuContent">
+            </div>
+            <p>
+                <strong>사용자가 보았을 때 한층 더 smooth한 애니메이션을 구현하고 싶다</strong>는 생각이 들어<br>
+                고민하던 중 구글링을 통해 GSAP에 대하여 기술하신 현직 퍼블리셔님의 블로그를 보고<br>
+                수업 외의 시간에 GSAP에 대하여 따로 공부하면서 연습하곤 했었기 때문에<br>
+                <strong>Jquery가 아닌 GSAP로 구현</strong>하게 되었습니다.<br>
+                <strong>메뉴 hover시 더욱 세련된 느낌을 만들고자 svg이미지</strong>를 처음으로 활용하여 보았습니다.<br>
+            </p>
+        </div>
+
+        <div class="content2">
+            <div class="content2Img">
+                <img src="img/content2Img.png" alt="">
+            </div>
+            <div class="content2Txt">
+                <p>
+                    무던한 성격을 가지고 있기 때문에 '부드러운 느낌을 줄 수 있는 방법이 없을까?'<br>
+                    하는 고민을 하던 중, 
+                    <strong>'둥근 달걀 같은 모양의 원이 smooth하게 움직이는 느낌이면 어떨까?' </strong>
+                    하는 생각을 하게 되었습니다.<br>
+                    <b>'둥근 달걀 모양'</b> 을 선택한 이유는, <br>이제 막 시작하는 신입의 마음으로 알을 깨고 나오는 
+                    마음으로 지원하고 있기 때문에 달걀 모양을 선택하였습니다.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="cardContent">
+            <h1>
+                Card contents
+            </h1>
+        </div>
+        <div class="line"></div>
+
+        <div class="content3">
+            <div class="content3Txt">
+                <p>
+                    2022년의 웹 페이지 트랜드가 어떤 것인지 해외의 IT블로그와 기사등을 통해 알아보면서<br>
+                    <strong>2022년에는 3D효과와 glass느낌을 주는 css효과가 유행할 전망</strong>이라는 것을 읽게 되었습니다.<br>
+                    blur필터나 opacity를 이용한 blur느낌을 주는 것은 photoshop을 사용할 때도 좋아하던 기능이었기 때문에 <br>
+                    rgba를 통해 색상을 여러가지로 바꿔보면서 만들게 되었습니다.<br>
+                    처음에는 전체화면을 덮게 만드는 것은 어떨까 하였으나 조금 답답한 느낌이 드는 단점을 발견하고<br>
+                    추후 2/3정도를 차지하게 하여 text 전체를 감싸되 바닥이 되는 이미지를 완전히 덮지 않도록 조절하였습니다.<br>
+                </p>
+            </div>
+
+            <div class="content3Img">
+                <img src="img/content3Img.png" alt="">
+            </div>
+        </div>
+
+        <div class="content4">
+            <div class="content4Txt">
+                <p>
+                    반응형웹과 적응형웹을 소개하는 카드 부분입니다. <br>
+                    <strong>flex</strong>기술로 만들었기 때문에 미디어쿼리가 길지 않다는 장점을 가지고 있습니다.<br>
+                    프로모션 부분에서는 <strong>최대한 심플한 이미지를 가져오고 싶었기 때문에</strong> <br>
+                    <strong>box-shadow효과를 통해 그림자를 안쪽에서 시작하여 바깥쪽으로 퍼지도록</strong> 하였습니다.<br>
+                    box-shadow 기술에서 rgba가 아닌 rgb를 사용한 것은 연습할 때 이후로 처음이었기 때문에<br>
+                    주변 지인들에게 자연스럽게 보여지는지에 대해서 참고를 받으며 만들어 보았습니다.<br>
+                </p>
+            </div>
+            <div class="content4Img">
+                <img src="img/content4Img.png" alt="">
+            </div>
+        </div>
+
+        <div class="content5">
+            <div class="content5Txt">
+                <p>
+                    UI디자인 프로모션에서는 목업 작업을 수월하게 하고자 <strong>코드를 통해<br>
+                    스마트폰을 그리는 연습</strong>을 자주 했었기 때문에 <br>
+                    연습한 것을 통해서 만들게 되었습니다. <br>
+                    최근 현업에 계신 퍼블리셔 분들과 개발자 분들께서 작성하신 글들을 많이 찾아보며<br>
+                    <strong>JS를 통한 onclick기능</strong>에 대해 많이 배우게 되었고 스마트폰에 버튼을 첨가하여<br>
+                    onclick을 이용해보자는 생각을 하며 버튼도 추가적으로 만들어 보았습니다. <br>
+                    <strong>어떻게 하면 여러 디자인을 깔끔하게 보여드릴 수 있을까</strong> 하는 생각으로<br>
+                    css의 애니메이션 효과를 첨가하였습니다.
+                </p>
+            </div>
+            <div class="content5Img">
+                <img src="img/content5Img.png" alt="">
+            </div>
+        </div>
+
+        <div class="content6">
+            <div class="content6Txt">
+                <p>
+                    <strong>2022년 3D효과가 트랜드라는 해외의 IT기사</strong>를 통해<br>
+                    설 연휴를 이용하여 3D효과에 대해 공부하게 되었습니다. <br>
+                    3D효과가 css를 통해 구현된다는 사실을 처음으로 알게 되었기 때문에<br>
+                    계속적으로 연습해 보았습니다.<br>
+                    <strong>transform-style의 preserve-3d</strong>를 통해 구현하였습니다.<br>
+                    <strong>perspective</strong>를 통해 평면과 사용자 간의 거리를 조절하게 되었고, <br>
+                    묘한 기분이 들며 굉장히 즐겁게 연습하고 작업할 수 있었습니다. <br>
+                    <strong>flex를 통해 나열</strong>하고, <strong>width값을 통해 한 블럭에 보여지는 카드의 숫자를 조절</strong>하였습니다. <br>
+                    <strong>hover기능을 통해 rotate</strong>를 주어 카드가 돌아갈 수 있게 하였고,<br>
+                    <strong>뒷쪽의 요소의 position을 absolute</strong>로 하여 앞면의 이미지와 달라붙을 수 있도록 하였습니다. <br>
+                    <strong>뒷쪽의 요소에도 rotate효과를 주어 hover효과로 rotate될 때 앞쪽 이미지와 함께 rotate</strong>될 수 있도록 하였습니다.<br>
+                    사용자에게 더욱 가깝게 다가갈 수 있는 디자인을 하고 싶다는 것이 퍼블리셔로써 꿈입니다만,<br>
+                    그것을 조금 더 느낄 수 있는 기회가 되어 3D효과를 배운 것이 무척 기뻤습니다.
+                </p>
+            </div>
+            <div class="content6Img">
+                <img src="img/content6Img.png" alt="">
+            </div>
+        </div>
+
+        <div class="content7">
+            <p>
+                처음 포트폴리오를 제작하기 시작했을 때 바로 떠오른 것이 가장 상단의 main과 footer의 모습이었습니다. <br>
+                이전부터 수업 외 시간의 연습과 공부를 통해 계속적으로 구상하던 부분들이기 때문에 <br>
+                구상했던 그대로의 모습으로 만들었습니다. <br>
+                <strong>background를 img로 fixed</strong>하고, <strong>glass느낌의 textBox</strong>를 얹어서 마지막 소개를 마무리 하고자 하였습니다. <br>
+                <strong>깔끔하고 투명한 이미지</strong>를 주고 싶었기 때문에 프로필 사진을 찍을 때에도 배경색상을 흰색계통으로 부탁드렸습니다. <br>
+                main에서 처럼 GSAP를 통해 애니메이션 효과를 줄까 하는 생각도 하였으나,<br>
+                모바일 환경에서 wifi가 아니면 조금 무거워진다는 지인의 이야기를 듣고 효과를 배제하였습니다. <br>
+            </p>
+            <div class="content7Img">
+                <img src="img/content7Img.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="buttonTxt">
+                <div class="btn">
+                    <a class="rdw-bt">자세히보기</a>
+                </div>
+                <div class="btn2">
+                    <a class="design-btn" id="openBtn4">컬러변경</a>
+                </div>
+
+            <p>
+                버튼입니다. <br>
+                기본적으로 첫 번째 버튼이 메인 버튼입니다만, 배경이 어두울 때는 두 번째 버튼을 사용합니다.<br>
+                css의 애니메이션 기능을 <strong>position의 위치값</strong>을 통해 움직이듯이 보여질 수 있도록 만들었습니다.<br>
+                반짝이는 느낌의 색상은 <strong>background효과에서 linear-gradient</strong>를<br>
+                <strong>transparent와 #ffffff</strong> 컬러를 통해 만들었습니다.<br>
+                이 부분 또한 계속적으로 연습해온 것을 통해 색상을 만들게 되었습니다.<br>
+                <strong>transform의 skewY값을 -45deg</strong>로 하여 대각선으로 기울게 만들어 더욱 반짝이는 듯한 효과를 연출하였습니다.<br>
+            </p>
+        </div>
+
+
+
+    </div><!-- container end -->
+</body>
+</html>

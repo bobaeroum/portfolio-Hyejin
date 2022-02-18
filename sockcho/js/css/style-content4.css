@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{margin: 0px; padding: 0px;}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: -15px;
+    margin-left: 0px;
+  }
+html{scroll-behavior: smooth;}
+
+/*  ===========================================
+                메뉴
+    =========================================== */
+
+header{border-bottom: solid 1px #ddd;
+    padding: 5px 80px;}
+
+button:focus{outline: none !important;}
+
+.navbar-light .navbar-nav .nav-link{margin: 0px 20px;
+                                color: #000289;
+                                font-weight: 500;}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+                                    color: #00BAF2;}
+
+.gototop{
+    position: fixed;
+    right: 20px; bottom: 10px;
+    font-size: 35px;
+    color: #05999e;
+    border-radius: 50%;
+    box-sizing: border-box;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.gototop:focus, .gototop:hover{color: #05999e;
+                opacity: 1;}
+
+/*  ===========================================
+                컨텐츠
+    =========================================== */
+
+.content4{overflow: hidden;
+        margin-top: 40px;}
+
+.content4-mo{display: none;}
+button:focus{outline: none;}
+
+.menu-color{background-color: #fff;}
+
+.title{margin-top: 130px; margin-bottom: 40px;}
+
+.box{overflow: hidden; position: relative;}
+.caption{position:absolute; 
+    left:0px; top:0px; opacity: 0;          
+    width:100%; height:100%;
+    transition: all 0.3s;
+    overflow: hidden;
+    }
+
+.box img{width: 100%;}
+
+.img-right1{overflow: hidden;}
+.img-right img{width: 100%;}
+
+
+.txt-box{background: rgba(0, 0, 0, 0.3);
+    width: 100%; height: 100%; color: #fff;}
+
+.txt-box h2{padding-top: 30%;}
+.txt-box h2 span{font-size: 13px;}
+
+.txt-box2{background: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100%; color: #fff;}
+.txt-box2 h2{padding-top: 15%;
+            color: #fff;
+            font-size: 20px;
+            line-height: 150%;
+            font-weight: 600;}
+
+.txt-box2 h2 span{font-size: 14px;
+                font-weight: 500;}
+
+.btn{margin: 20px auto;
+    background-color: #00BAF2;
+    color: #fff;
+    font-size: 14px;font-weight: 500;}
+
+.btn:hover{color: #000289;}
+
+.img-right2{margin-top: 20px;}
+
+
+.main-banner1{overflow: hidden; height: 300px; margin-top: 100px;}
+.main-banner1 img{width: 100%;
+    position: relative;
+    animation: sepia 1s 0.5s ease-in-out both;
+                }
+/* 상단 배너 이미지 sepia필터 되는 애니메이션 */
+@keyframes sepia{
+    0%{}
+    100%{-webkit-filter: sepia(100%);filter: sepia(50%);opacity: 1;}
+}
+
+.title{position: absolute; top: 20px; left: 80px;
+        color: #fff;
+        font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;}
+
+.title-1{margin-top: 80px;}
+
+/* 아이콘바 */
+.content-bar{background: linear-gradient(to top, #fe9061, #f9e071, #fef3e1, #fdf9e2);
+            margin-top: 80px;
+        }
+
+.content-box{overflow: hidden;
+            padding: 40px 0;}
+.content-box > div{
+                float: left;
+                width: 50%;
+            }
+input[name="c4-tabmenu"]{
+    display: none;
+}
+
+.tab-btn label{
+    width: 30%;
+    margin: 5px;
+    cursor: pointer;
+    /* color: #fff; */
+
+}
+.tab-btn label em{background-color: #fff;
+                display: inline-block;
+                width: 100px; height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 25px;
+}
+.tab-btn label em i{
+    font-size: 50px;
+    color: #fe9061;
+}
+.tab-btn label span{
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+.c4-tab{
+    display: none;
+    color: #fff;
+    text-shadow: 1px 1px 3px #aaa;
+    padding-top: 30px;
+    padding-left: 100px;
+
+}
+.c4-tab h5{font-size: 25px;
+            font-weight: 600;
+            text-align: left;
+        }
+.c4-tab p{
+    text-align: left;
+}
+
+/* 아이콘 클릭부분 */
+input[id="c4-tab1"]:checked ~ .c4-tabs .c4-tab1{
+    display: block;
+}
+input[id="c4-tab2"]:checked ~ .c4-tabs .c4-tab2{
+    display: block;
+}
+input[id="c4-tab3"]:checked ~ .c4-tabs .c4-tab3{
+    display: block;
+}
+
+/* bg컬러변경 */
+input[id="c4-tab1"]:checked ~ .tab-btn label[for="c4-tab1"] em {
+    background-color: #fe9061;
+}
+input[id="c4-tab2"]:checked ~ .tab-btn label[for="c4-tab2"] em {
+    background-color: #fe9061;
+}
+input[id="c4-tab3"]:checked ~ .tab-btn label[for="c4-tab3"] em {
+    background-color: #fe9061;
+}
+/* 아이콘 컬러변경 */
+input[id="c4-tab1"]:checked ~ .tab-btn label[for="c4-tab1"] em i{
+    color: #fff;
+}
+input[id="c4-tab2"]:checked ~ .tab-btn label[for="c4-tab2"] em i{
+    color: #fff;
+}
+input[id="c4-tab3"]:checked ~ .tab-btn label[for="c4-tab3"] em i{
+    color: #fff;
+}
+
+/* span컬러변경 */
+input[id="c4-tab1"]:checked ~ .tab-btn label[for="c4-tab1"] span{
+    color: #c91111; font-weight: bold;
+}
+input[id="c4-tab2"]:checked ~ .tab-btn label[for="c4-tab2"] span{
+    color: #c91111; font-weight: bold;
+}
+input[id="c4-tab3"]:checked ~ .tab-btn label[for="c4-tab3"] span{
+    color: #c91111; font-weight: bold;
+}
+
+/* 이메일 가입 폼 */
+.email{margin: 80px 0px; }
+.email-content{border: 1px solid #ddd;
+            padding: 40px;}
+
+.photo-content{overflow: hidden;}
+.photo-content img{width: 100%;}
+
+.form-inline .control1 {
+    display: inline-block;
+    width: 37%;
+    vertical-align: middle;
+    margin: 0px 10px;
+  }
+
+  .form-inline .control2 {
+    display: inline-block;
+    width: 62%;
+    vertical-align: middle;
+  }
+.form-inline span{margin: 0px 10px;}
+
+/* 캐러셀 */
+.carousel{overflow: hidden;}
+.banner-1 .carousel-inner{overflow: hidden;}
+.banner-1 img{width: 100%; height: 700px;}
+
+.carousel-indicators{
+                    bottom: 0px;}
+
+
+/*  ===========================================
+                미디어쿼리
+    =========================================== */
+
+  /*#####################################
+                노트북
+    #####################################*/
+@media(max-width:1199px){
+    body{overflow: scroll; margin: auto; text-align: center;}
+    /* 메뉴부분 */
+    header{background-color: #fff;
+        padding: 5px 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-light .navbar-nav .nav-link{margin: 0px 20px;
+        color: #000289;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+
+    /* 컨텐츠 */
+    /* caption */
+    .txt-box h2{font-size: 20px;}
+    .txt-box2 h2{padding-top: 10%;
+        color: #fff;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 600;}
+
+    .txt-box2 h2 span{font-size: 14px;
+            font-weight: 500;}
+
+
+    .title-1{font-size: 25px;
+        margin-top: -40px;}
+    
+    /* 이메일 */
+    .email{margin: 40px 0px; }
+    .email-content{border: 1px solid #ddd;
+                padding: 40px;}
+
+    .form-inline .control1 {
+        display: inline-block;
+        width: 35%;
+        vertical-align: middle;
+        margin: 10px 5px;
+    }
+
+    .form-inline .control2 {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .form-inline .custom-select{margin: 10px 5px;}
+
+    }
+
+
+
+  /*#####################################
+                태블릿
+    #####################################*/
+@media(max-width:991px){
+/* 메뉴부분 */
+    header{background-color: #fff;
+        padding: 5px 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-light .navbar-nav .nav-link{margin: 0px 20px;
+        color: #000289;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+
+/* 컨텐츠 */
+.content4{display: none;}
+.content4-mo{display: block; margin-top: 20px;}
+
+/* 상단배너 */
+.title{position: absolute; top: 30px; left: 50px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px #aaa;}
+
+    .main-banner1{overflow: hidden; height: 300px; margin-top: 100px;}
+    .main-banner1 img{width: 100%;
+    position: relative;
+    animation: none;
+                }
+
+.title-1{font-size: 25px;
+    margin-top: -100px;}
+
+/* 아이콘 바 */
+.content-bar{background: linear-gradient(to top, #fe9061, #f9e071, #fef3e1, #fdf9e2);
+    margin-top: 40px;
+}
+
+.content-box{overflow: hidden;
+    padding: 20px 0;}
+.content-box > div{
+        float: left;
+        width: 100%;
+    }
+input[name="c4-tabmenu"]{
+    display: none;
+}
+
+.tab-btn label{
+    width: 25%;
+    margin: 5px;
+    cursor: pointer;
+}
+.tab-btn label em{background-color: #fff;
+    display: inline-block;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0px;
+}
+.tab-btn label em i{
+    font-size: 30px;
+    color: #fe9061;
+    margin-top: 10px;
+}
+.tab-btn label span{
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #aaa;
+    font-size: 15px;
+}
+
+.c4-tab{
+    display: none;
+    color: #fff;
+    text-shadow: 1px 1px 3px #aaa;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+.c4-tab h5{font-size: 17px;
+    font-weight: 600;
+}
+
+.c4-tab p{font-size: 14px;
+
+}
+
+/* 이메일 */
+.photo-content{display: none;}
+
+.email{margin: 40px 0px; }
+.email-content{border: 1px solid #ddd;
+            padding: 40px;}
+
+.form-inline .control1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin: 10px 0px;
+  }
+
+  .form-inline .control2 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+.form-inline .custom-select{margin: 10px 0px; width: 100%;}
+.form-inline span{display: none;}
+    }
+
+  /*#####################################
+                스마트폰
+    #####################################*/
+@media(max-width:767px){
+/* 메뉴부분 */
+    header{background-color: #fff;
+        padding: 5px 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-light .navbar-nav .nav-link{margin: 0px 20px;
+        color: #000289;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+/* 컨텐츠 */
+.content4{display: none;}
+.content4-mo{display: block;}
+
+/* 상단배너 */
+.title{position: absolute; top: 3px; left: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #aaa;}
+
+.main-banner1{overflow: hidden; height: 300px; margin-top: 100px;}
+.main-banner1 img{width: 100%;
+    position: relative;
+    animation: none;
+            }
+
+.title-1{font-size: 20px;
+    margin-top: -200px;}
+
+/* 아이콘 바 */
+.content-bar{background: linear-gradient(to top, #fe9061, #f9e071, #fef3e1, #fdf9e2);
+    margin-top: 40px;
+}
+
+.content-box{overflow: hidden;
+    padding: 20px 0;}
+.content-box > div{
+        float: left;
+        width: 100%;
+    }
+input[name="c4-tabmenu"]{
+    display: none;
+}
+
+.tab-btn label{
+    width: 25%;
+    margin: 5px;
+    cursor: pointer;
+}
+.tab-btn label em{background-color: #fff;
+    display: inline-block;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0px;
+}
+.tab-btn label em i{
+    font-size: 30px;
+    color: #fe9061;
+    margin-top: 10px;
+}
+.tab-btn label span{
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #aaa;
+    font-size: 15px;
+}
+
+.c4-tab{
+    display: none;
+    color: #fff;
+    text-shadow: 1px 1px 3px #aaa;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+.c4-tab h5{font-size: 17px;
+    font-weight: 600; margin-left: -100px;
+}
+
+.c4-tab p{font-size: 14px;
+    margin-left: -100px;
+}
+
+/* 이메일 */
+.photo-content{display: none;}
+
+.email{margin: 40px 0px; }
+.email-content{border: 1px solid #ddd;
+            padding: 40px;}
+
+.form-inline .control1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin: 10px 0px;
+  }
+
+  .form-inline .control2 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+.form-inline .custom-select{margin: 10px 0px;}
+.form-inline span{display: none;}
+
+}
+

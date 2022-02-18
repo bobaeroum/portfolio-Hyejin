@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공차 적응형 웹 컨셉</title>
+
+<style>
+    /* 웹폰트 */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+    @font-face {
+        font-family: 'MaplestoryOTFLight';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        justify-content: center;
+        font-family: 'Nanum Gothic Coding';
+        max-width: 1400px;
+        min-height: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
+    h1, h2, h3, h4, h5, h6{
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .title{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .title h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .rwd-inner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    
+    .rwd-bg{
+        display: flex;
+        width: 30%;
+        padding: 1rem 0.1rem;
+        border-radius: 10px;
+        background: #202020;
+        margin: 1rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgBx{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .rwd-info{
+        width: 100%;
+        text-align: center;
+    }
+    .rwd-info p{
+        line-height: 1.5rem;
+    }
+    
+    
+    .rwd-info-circle{
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .rwd-info-circle .circleBx1,
+    .rwd-info-circle .circleBx2,
+    .rwd-info-circle .circleBx3{
+        width: 14rem;
+        height: 14rem;
+        padding: 1rem 2rem;
+        margin: auto;
+        margin-right: 10rem;
+        margin-top: 3rem;
+        text-align: center;
+        background: #CBE7E3;
+        border-radius: 50%;
+        border: 2px dashed #05999E;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .rwd-info-circle .circleBx3{
+        margin-right: 0;
+    }
+    
+    .rwd-info-circle .circleBx2{
+        background: #fff;
+    }
+    
+    .circle-title{
+        font-weight: bold;
+    }
+    .rwd-info-circle .circleBx1 h5,
+    .rwd-info-circle .circleBx2 h5,
+    .rwd-info-circle .circleBx3 h5{
+        font-size: 1.1rem;
+    }
+    .rwd-info-circle .circleBx1 p,
+    .rwd-info-circle .circleBx2 p,
+    .rwd-info-circle .circleBx3 p{
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: 0.95rem;
+        width: 10rem;
+    }
+    
+    .color{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 2rem;
+    }
+    
+    .color-inner{
+        width: 50%;
+    }
+    
+    .color-title{
+        background: #000289;
+        width: 10rem;
+        margin-top: 5rem;
+    
+    }
+    
+    .color-title p{
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .colorBx{
+        display: flex;
+    }
+    
+    .colorBx > div{
+        width: 3rem;
+        height: 3rem;
+        margin: 2rem;
+        position: relative;
+    }
+    
+    .colorBx > div:nth-child(1){
+        background: #C20F2D;
+    }
+    .colorBx > div:nth-child(2){
+        background: #0E291E;
+    }
+    .colorBx > div:nth-child(3){
+        background: #F5EEE8;
+    }
+    .colorBx > div:nth-child(4){
+        background: #FFFFFF;
+        border: 1px solid #000;
+    }
+    .colorBx > div:nth-child(5){
+        background: #000000;
+    }
+    
+    .colorBx span{
+        display: block;
+        position: absolute;
+        bottom: -1.5rem;
+    }
+    
+    .gradient-color,
+    .gradient-color2{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .gradient-color div,
+    .gradient-color2 div{
+        margin: 1rem;
+        position: relative;
+        width: 15rem;
+        height: 2.5rem;
+    }
+    
+    .gradient-color span,
+    .gradient-color2 span{
+        display: block;
+        position: absolute;
+        bottom: -1.5rem;
+        width: 80%;
+    }
+    
+    .gradient-color div:nth-child(1){
+        background: linear-gradient(90deg,#FF5353, #FFB2E0);
+    }
+    .gradient-color div:nth-child(2){
+        background: linear-gradient(90deg,#000289, #1BFFFF);
+    }
+    .gradient-color2 div:nth-child(1){
+        background: linear-gradient(90deg,#ED2E2E, #F5F025);
+    }
+    .gradient-color2 div:nth-child(2){
+        background: linear-gradient(90deg,#05999E, #CBE7E3);
+    }
+    
+    .font{
+        line-height: 1.5rem;
+    }
+    
+    .concept{
+        width: 50%;
+    }
+    .concept-txt{
+        background: #CBE7E3;
+        border: 2px dashed #05999E;
+        padding: 1rem;
+        width: 80%;
+        text-align: justify;
+        border-radius: 10px;
+    }
+    
+    .concept-txt p{
+        line-height: 1.5rem;
+    }
+    
+    .planar{
+        margin-top: 3rem;
+        text-align: center;
+    }
+    
+    
+    @media screen and (max-width: 991px){
+        body{
+            width: 100%;
+            padding: 1rem;
+        }
+    
+        .rwd-inner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 3rem;
+    
+    }
+    .rwd-bg{
+        width: 80%;
+    
+    }
+    
+    .rwd-info-circle{
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .rwd-info-circle .circleBx1,
+    .rwd-info-circle .circleBx2,
+    .rwd-info-circle .circleBx3{
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .color{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .color-inner{
+        width: 100%;
+    }
+    
+    .colorBx > div{
+        width: 3rem;
+        height: 2.3rem;
+        margin: 1rem;
+        position: relative;
+        margin: auto;
+    }
+    
+    .concept{
+        width: 100%;
+    }
+    .gradient-color{
+        margin-top: 3rem;
+    }
+    .gradient-color,
+    .gradient-color2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .gradient-color div,
+    .gradient-color2 div{
+        margin: 1rem auto;
+    }
+    
+    .concept-txt{
+        margin: auto;
+    }
+    
+    .color-title{
+        margin: 2rem auto;
+    }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="img/gongcha.png" alt="">
+    </div>
+    <div class="title">
+        <h2>
+            적응형 웹) 공차 홈페이지 심플버전 리뉴얼
+        </h2>
+    </div>
+    <div class="rwd-inner">
+        <div class="rwd-bg">
+            <div class="imgBx">
+                <img src="img/gongcha.png" alt="">
+            </div>
+        </div>
+        <div class="rwd-bg">
+            <div class="imgBx">
+                <img src="img/gongchathumb2.png" alt="">
+            </div>
+        </div>
+        <div class="rwd-bg">
+            <div class="imgBx">
+                <img src="img/gongchathumb3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <h2>
+            컨셉
+        </h2>
+    </div>
+
+    <div class="rwd-info">
+        <p>
+            가장 처음으로 작업한 적응형 웹 페이지 입니다. <br>
+            공차의 단아하고 고급스러운 느낌을 fade in fade out을 통해 <br>
+            표현하고 싶었습니다. <br>
+            
+        </p>
+    </div>
+
+    <div class="rwd-info-circle">
+        <div class="circleBx1">
+            <h5 class="circle-title">컬러 사용 자제</h5>
+                <p>
+                    고급스럽고 심플한 느낌을 줄 수 있도록 컬러의 사용을 자제하였습니다.
+                </p>
+        </div>
+
+        <div class="circleBx2">
+            <h5 class="circle-title">심플함</h5>
+                <p>
+                    최대한 군더더기를 제거하고 
+                    명확하게 레이아웃을 보여줄 수 있도록 만들었습니다.
+                </p>
+        </div>
+
+        <div class="circleBx3">
+            <h5 class="circle-title">fade in out</h5>
+                <p>
+                    fade in out 기술을 통해 브랜드가 추구하는 느림의 미학을 보여주고자 하였습니다.
+                </p>
+        </div>
+    </div>
+
+    <div class="color">
+        <div class="color-inner">
+            <div class="color-title">
+                <p>
+                    색상
+                </p>
+            </div>
+            <div class="colorBx">
+                <div class="colorBx1">
+                    <span>#C20F2D</span>
+                </div>
+                <div class="colorBx2">
+                    <span>#0E291E</span>
+                </div>
+                <div class="colorBx3">
+                    <span>#F5EEE8</span>
+                </div>
+                <div class="colorBx4">
+                    <span>#FFFFFF</span>
+                </div>
+                <div class="colorBx5">
+                    <span>#000000</span>
+                </div>
+            </div>
+
+            <div class="color-title">
+                <p>
+                    폰트
+                </p>
+            </div>
+            <div class="font">
+                <p>
+                    심플하면서도 가독성이 좋은 Noto Sans KR을 사용하였습니다.<br>
+                    강조되어야 하는 문구들은 font-weight를 통해 굵기를 조절하였습니다.<br>
+                </p>
+            </div>
+        </div>
+        <div class="concept">
+            <div class="color-title">
+                <p>
+                    컬러 컨셉
+                </p>
+            </div>
+            <div class="concept-txt">
+                <p>
+                    모든 컬러는 브랜드 컬러와 어울리는 어두운 톤의 컬러로 사용하였습니다. <br>
+                    공차의 고급스러운 느낌을 강조하고자 컬러의 사용을 자제하였습니다. <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="planar">
+        <img src="img/rwdweb3.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>던킨</title>
+<!-- 파비콘 -->
+<link rel="apple-touch-icon" sizes="57x57" href="ddfavicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/ddfavicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/ddfavicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/ddfavicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/ddfavicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/ddfavicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/ddfavicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/ddfavicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/ddfavicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/ddfavicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/ddfavicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/ddfavicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/ddfavicon/favicon-16x16.png">
+<link rel="manifest" href="img/ddfavicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/ddfavicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="css/dunkinstyle.css">
+    <link rel="stylesheet" href="css/dunkinresponsive.css">
+<style>
+
+
+@media (max-width: 992px) {
+    .login .loginWrap{
+        max-width: 400px;
+    }
+
+    .login .loginWrap .user .imgBx{
+        display: none;
+    }
+
+    .login .loginWrap .user .formBx{
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+    <section class="login">
+        <header>
+            <a href="dunkin.html">
+                <img src="img/logo.png" class="logo">
+            </a>
+            <div class="toggleMenu" onclick="menuToggle()"></div>
+            <ul class="nav">
+                <li><a href="dunkinlogin.html">로그인</a></li>
+                <li><a href="dunkinmenu.html">메뉴</a></li>
+                <li><a href="dunkinbrand.html">브랜드</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </header>
+
+        <div class="loginWrap">
+            <div class="user signupBx">
+                <div class="imgBx">
+                    <img src="img/login3.jpg" alt="">
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h2>
+                            로그인
+                        </h2>
+                        <input type="text" name="" placeholder="아이디">
+                        <input type="password" name="" placeholder="비밀번호">
+                        <input type="submit" name="" value="로그인">
+                        <p class="signup">회원가입 글자를 눌러보세요!
+                            <a onclick="toggleForm();">회원가입</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user sighupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>
+                            회원가입
+                        </h2>
+                        <input type="text" name="" placeholder="아이디">
+                        <input type="email" name="" placeholder="이메일">
+                        <input type="password" name="" placeholder="비밀번호">
+                        <input type="password" name="" placeholder="비밀번호 확인">
+                        <input type="submit" name="" value="회원가입">
+                        <p class="signup">로그인 글자를 눌러보세요!
+                            <a onclick="toggleForm();">로그인</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="img/login1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    function imgSlider(thumb){
+    document.querySelector('.dunkin').src = thumb;
+    }
+
+    function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+
+    function toggleForm(){
+    var loginWrap = document.querySelector('.loginWrap')
+    loginWrap.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
